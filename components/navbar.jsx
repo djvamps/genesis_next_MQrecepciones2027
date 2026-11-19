@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import GallerySection from "@/sections/gallery-section";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +15,9 @@ export default function Navbar() {
 
   const links = [
     { name: "Home", href: "/" },
-    { name: "Paquetes", href: "#agents" },
+    { name: "Paquetes", href: "#paquetes" },
     { name: "Salones", href: "#use-cases" },
-    { name: "Galeria", href: "#pricing" },
+    { name: "Galeria", href: "#galeria" },
     { name: "Contacto", href: "#docs" },
   ];
 
@@ -45,7 +46,7 @@ export default function Navbar() {
         viewport={{ once: true }}
         transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1 }}
       >
-        <a href="https://prebuiltui.com?utm_source=genesis">
+        <a href="#">
           <Image
             src="/assets/logo.svg"
             alt="logo"

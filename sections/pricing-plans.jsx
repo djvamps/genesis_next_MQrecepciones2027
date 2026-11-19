@@ -58,7 +58,7 @@ export default function PricingPlans() {
   ];
 
   return (
-    <section className="mt-32">
+    <section id="paquetes" className="mt-32">
       <SectionTitle
         title="Nuestros Paquetes"
         description="Elige el plan ideal para tu celebración. Todo lo que necesitas en un solo lugar, diseñado para hacer de tu evento un momento inolvidable."
