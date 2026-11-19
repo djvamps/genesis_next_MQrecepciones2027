@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://tudominio.com"), // Reemplaza con tu dominio real
+  metadataBase: new URL("https://mq-recepciones2027.netlify.app/"), // Reemplaza con tu dominio real
   title: {
     default: "MQ - Recepciones y Eventos | Locales y Paquetes para Fiestas",
     template: "%s | MQ - Recepciones y Eventos",
@@ -35,7 +35,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "es_PE",
-    url: "https://tudominio.com",
+    url: "https://mq-recepciones2027.netlify.app/",
     siteName: "MQ - Recepciones y Eventos",
     title:
       "MQ - Recepciones y Eventos | Haz realidad tus momentos inolvidables",
