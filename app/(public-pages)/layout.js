@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import WhatsappButton from "@/components/whatsapp-button";
 
 export const metadata = {
   title: "MQ - Recepciones y Eventos",
@@ -16,6 +17,7 @@ export default function Layout({ children }) {
       <Navbar />
       {children}
       <Footer />
+      <WhatsappButton />
     </>
   );
 }

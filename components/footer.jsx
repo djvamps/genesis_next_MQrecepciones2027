@@ -76,10 +76,7 @@ export default function Footer() {
         <p>By Pengrafic</p>
         <p>
           Copyright © 2027{" "}
-          <a href="https://prebuiltui.com?utm_source=genesis">
-            MQ - Recepciones
-          </a>
-          .
+          <a href="https://www.pengrafic.com">MQ - Recepciones</a>.
         </p>
       </div>
     </motion.footer>

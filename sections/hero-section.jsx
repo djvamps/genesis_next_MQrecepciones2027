@@ -1,5 +1,6 @@
-import { PlayCircleIcon } from "lucide-react";
+import { PhoneIcon } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -13,7 +14,7 @@ export default function HeroSection() {
       >
         <div className="absolute rounded-full top-80 left-2/5 -translate-x-1/2 size-130 bg-[#D10A8A] blur-[100px]" />
         <div className="absolute rounded-full top-80 right-0 -translate-x-1/2 size-130 bg-[#2E08CF] blur-[100px]" />
-        <div className="absolute rounded-full top-0 left-1/2 -translate-x-1/2 size-130 bg-[#F26A06] blur-[100px]" />
+        <div className="absolute rounded-full top-0 left-1/2 -translate-x-1/2 size-130 bg-[#EFB810] blur-[100px]" />
       </motion.div>
       <motion.section className="flex flex-col items-center">
         <motion.div
@@ -68,13 +69,19 @@ export default function HeroSection() {
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
         >
-          <button className="btn max-md:w-full glass py-3">
+          <Link
+            href="/reservar"
+            className="btn max-md:w-full glass py-3 text-center"
+          >
             Cotiza tu Evento
-          </button>
-          <button className="btn max-md:w-full glass flex items-center justify-center gap-2 py-3">
-            <PlayCircleIcon className="size-4.5" />
-            Ver Paquetes y Salones
-          </button>
+          </Link>
+          <a
+            href="tel:+51992870423"
+            className="btn max-md:w-full glass flex items-center justify-center gap-2 py-3"
+          >
+            <PhoneIcon className="size-4.5" />
+            Llámanos
+          </a>
         </motion.div>
       </motion.section>
     </>
